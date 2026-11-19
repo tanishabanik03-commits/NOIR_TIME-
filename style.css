@@ -1,0 +1,1226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+.small-title {
+    color: #D4AF37;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #101010;
+    border-bottom: 1px solid #383838;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.footer-logo span {
+    color: #D4AF37;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #D4AF37;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 8%;
+    background-color: #1A1A1A;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.hero-text h1 span {
+    color: #D4AF37;
+}
+
+.hero-text p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.gold-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #D4AF37;
+    color: #101010 !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.gold-button:hover {
+    background-color: #F5F5F5;
+}
+
+
+/* HOME PAGE FEATURES */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px 8%;
+    background-color: #222222;
+    border-top: 1px solid #383838;
+    border-bottom: 1px solid #383838;
+}
+
+.features div {
+    text-align: center;
+    color: #D4AF37;
+    font-size: 14px;
+}
+
+
+/* HOME PAGE WATCH COLLECTION */
+
+.watches {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.watches h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.watches h2 span {
+    color: #D4AF37;
+}
+
+.watches > p {
+    color: #B5B5B5;
+    margin-bottom: 35px;
+}
+
+.watch-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.watch-card {
+    background-color: #1A1A1A;
+    border: 1px solid #383838;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.watch-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.watch-card h3 {
+    font-size: 19px;
+    margin: 18px 15px 8px;
+}
+
+.watch-card p {
+    color: #B5B5B5;
+    margin: 0 15px 15px;
+    line-height: 1.7;
+}
+
+.watch-card a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.watch-card a:hover {
+    color: #D4AF37;
+}
+
+
+/* HOME PAGE CATEGORIES */
+
+.categories {
+    padding: 70px 8%;
+    background-color: #1A1A1A;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 36px;
+    margin: 15px 0 35px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-container div {
+    padding: 30px 15px;
+    background-color: #222222;
+    border: 1px solid #383838;
+}
+
+.category-container h3 {
+    color: #D4AF37;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.category-container p {
+    color: #B5B5B5;
+    line-height: 1.7;
+}
+
+
+/* HOME PAGE ABOUT SECTION */
+
+.about-home {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 8%;
+}
+
+.about-home img {
+    width: 48%;
+    height: 370px;
+    object-fit: cover;
+}
+
+.about-home h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.about-home h2 span {
+    color: #D4AF37;
+}
+
+.about-home p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* HOME PAGE WATCH BANNER */
+
+.watch-banner {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #1A1A1A;
+}
+
+.watch-banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.watch-banner h2 {
+    font-size: 36px;
+    margin: 25px 0 15px;
+}
+
+.watch-banner h2 span {
+    color: #D4AF37;
+}
+
+.watch-banner p {
+    color: #B5B5B5;
+    line-height: 1.8;
+}
+
+
+/* HOME PAGE FINAL SECTION */
+
+.last-section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.last-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.last-section h2 span {
+    color: #D4AF37;
+}
+
+.last-section p {
+    color: #B5B5B5;
+    line-height: 1.8;
+}
+
+
+/* ABOUT PAGE HERO */
+
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 8%;
+    background-color: #1A1A1A;
+}
+
+.about-hero-text,
+.about-hero-image {
+    flex: 1;
+}
+
+.about-hero-text h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.about-hero-text h1 span {
+    color: #D4AF37;
+}
+
+.about-hero-text p {
+    color: #B5B5B5;
+    line-height: 1.8;
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* ABOUT PAGE INTRODUCTION */
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.about-text h2 span {
+    color: #D4AF37;
+}
+
+.about-text p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* ABOUT PAGE VALUES */
+
+.about-values {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #1A1A1A;
+}
+
+.about-values h2 {
+    font-size: 36px;
+    margin: 15px 0 40px;
+}
+
+.about-values h2 span {
+    color: #D4AF37;
+}
+
+.values-container {
+    display: flex;
+    gap: 25px;
+}
+
+.value-box {
+    flex: 1;
+    padding: 35px 25px;
+    background-color: #222222;
+    border: 1px solid #383838;
+}
+
+.value-box i {
+    font-size: 32px;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.value-box h3 {
+    margin-bottom: 15px;
+}
+
+.value-box p {
+    color: #B5B5B5;
+    line-height: 1.7;
+}
+
+
+/* ABOUT PAGE WHY CHOOSE US */
+
+.why-noir {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 8%;
+}
+
+.why-noir-text,
+.why-noir-image {
+    flex: 1;
+}
+
+.why-noir-text h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.why-noir-text h2 span {
+    color: #D4AF37;
+}
+
+.why-noir-text p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.why-noir-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+
+/* ABOUT PAGE FINAL SECTION */
+
+.about-bottom {
+    padding: 65px 20px;
+    text-align: center;
+    background-color: #1A1A1A;
+}
+
+.about-bottom h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-bottom h2 span {
+    color: #D4AF37;
+}
+
+.about-bottom p {
+    color: #B5B5B5;
+    margin-bottom: 15px;
+}
+
+
+/* SERVICES PAGE HERO */
+
+.services-hero {
+    text-align: center;
+    padding: 90px 8%;
+    background-color: #1A1A1A;
+}
+
+.services-hero h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.services-hero h1 span {
+    color: #D4AF37;
+}
+
+.services-hero p {
+    color: #B5B5B5;
+    line-height: 1.8;
+}
+
+
+/* SERVICES CARDS */
+
+.services-section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin: 15px 0 40px;
+}
+
+.services-section h2 span {
+    color: #D4AF37;
+}
+
+.services-container {
+    display: flex;
+    gap: 25px;
+}
+
+.service-box {
+    flex: 1;
+    background-color: #1A1A1A;
+    border: 1px solid #383838;
+    text-align: left;
+}
+
+.service-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-text {
+    padding: 25px;
+}
+
+.service-text i {
+    color: #D4AF37;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.service-text h3 {
+    margin-bottom: 12px;
+}
+
+.service-text p {
+    color: #B5B5B5;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-text a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.service-text a:hover {
+    color: #D4AF37;
+}
+
+
+/* SERVICES WATCH CARE */
+
+.care-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 8%;
+    background-color: #1A1A1A;
+}
+
+.care-image,
+.care-text {
+    flex: 1;
+}
+
+.care-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.care-text h2 {
+    font-size: 34px;
+    margin: 15px 0 25px;
+}
+
+.care-text h2 span {
+    color: #D4AF37;
+}
+
+.care-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.care-point i {
+    color: #D4AF37;
+    margin-top: 5px;
+}
+
+.care-point p {
+    color: #B5B5B5;
+    line-height: 1.6;
+}
+
+
+/* SERVICES FAQ */
+
+.faq-section {
+    padding: 75px 12%;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 34px;
+    margin: 15px 0 35px;
+}
+
+.faq-section h2 span {
+    color: #D4AF37;
+}
+
+.faq-box {
+    padding: 22px;
+    margin-bottom: 15px;
+    text-align: left;
+    background-color: #1A1A1A;
+    border: 1px solid #383838;
+}
+
+.faq-box h3 {
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+.faq-box p {
+    color: #B5B5B5;
+    line-height: 1.7;
+}
+
+
+/* SERVICES FINAL SECTION */
+
+.services-bottom {
+    padding: 65px 20px;
+    text-align: center;
+    background-color: #1A1A1A;
+}
+
+.services-bottom h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.services-bottom h2 span {
+    color: #D4AF37;
+}
+
+.services-bottom p {
+    color: #B5B5B5;
+    margin-bottom: 15px;
+}
+
+
+/* CONTACT PAGE HERO */
+
+.contact-hero {
+    text-align: center;
+    padding: 80px 8%;
+    background-color: #1A1A1A;
+}
+
+.contact-hero h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.contact-hero h1 span {
+    color: #D4AF37;
+}
+
+.contact-hero p {
+    color: #B5B5B5;
+    line-height: 1.8;
+}
+
+
+/* CONTACT INFORMATION AND FORM */
+
+.contact-section {
+    display: flex;
+    gap: 50px;
+    padding: 80px 8%;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.contact-info h2 span,
+.contact-form h2 span {
+    color: #D4AF37;
+}
+
+.contact-description,
+.contact-form > p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    color: #D4AF37;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.contact-item h3 {
+    margin-bottom: 7px;
+}
+
+.contact-item p {
+    color: #B5B5B5;
+    line-height: 1.6;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social h3 {
+    margin-bottom: 15px;
+}
+
+.contact-social a {
+    display: inline-block;
+    color: #F5F5F5;
+    font-size: 20px;
+    margin-right: 18px;
+}
+
+.contact-social a:hover {
+    color: #D4AF37;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    padding: 35px;
+    background-color: #1A1A1A;
+    border: 1px solid #383838;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    color: #F5F5F5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 13px;
+    margin-bottom: 20px;
+    background-color: #222222;
+    border: 1px solid #383838;
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid #D4AF37;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 14px;
+    background-color: #D4AF37;
+    color: #101010;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #F5F5F5;
+}
+
+
+/* CONTACT BANNER */
+
+.contact-banner {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 70px 8%;
+    background-color: #1A1A1A;
+}
+
+.contact-banner img {
+    width: 45%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.contact-banner-text {
+    flex: 1;
+}
+
+.contact-banner-text h2 {
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.contact-banner-text h2 span {
+    color: #D4AF37;
+}
+
+.contact-banner-text p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1A1A1A;
+    border-top: 1px solid #383838;
+    padding: 55px 8% 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+    gap: 30px;
+}
+
+.footer-box h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    color: #B5B5B5;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.footer-box > a {
+    display: block;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.footer-box > a:hover {
+    color: #D4AF37;
+}
+
+.footer-box p i {
+    color: #D4AF37;
+    margin-right: 7px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #F5F5F5;
+    font-size: 19px;
+}
+
+.social-icons a:hover {
+    color: #D4AF37;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #383838;
+    margin-top: 35px;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #B5B5B5;
+    font-size: 12px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .watch-container,
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-text h1,
+    .about-hero-text h1 {
+        font-size: 38px;
+    }
+}
+
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .hero,
+    .about-home,
+    .about-hero,
+    .about-intro,
+    .why-noir,
+    .care-section,
+    .contact-section,
+    .contact-banner {
+        flex-direction: column;
+        padding: 50px 6%;
+    }
+
+    .hero-text h1,
+    .about-hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-image,
+    .about-hero-image,
+    .about-image,
+    .about-text,
+    .why-noir-text,
+    .why-noir-image,
+    .care-image,
+    .care-text,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .hero-image img,
+    .about-hero-image img,
+    .about-image img,
+    .why-noir-image img,
+    .care-image img {
+        height: 300px;
+    }
+
+    .about-home img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .watches,
+    .categories,
+    .services-section,
+    .faq-section {
+        padding: 50px 6%;
+    }
+
+    .watches h2,
+    .categories h2,
+    .about-values h2,
+    .about-bottom h2,
+    .services-section h2,
+    .services-bottom h2,
+    .last-section h2 {
+        font-size: 28px;
+    }
+
+    .watch-container,
+    .category-container,
+    .values-container,
+    .services-container {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .watch-card img {
+        height: 260px;
+    }
+
+    .about-values {
+        padding: 50px 6%;
+    }
+
+    .value-box {
+        padding: 25px;
+    }
+
+    .services-hero,
+    .contact-hero {
+        padding: 55px 6%;
+    }
+
+    .services-hero h1,
+    .contact-hero h1 {
+        font-size: 32px;
+    }
+
+    .care-text h2,
+    .faq-section h2,
+    .contact-info h2,
+    .contact-form h2,
+    .contact-banner-text h2 {
+        font-size: 28px;
+    }
+
+    .faq-section {
+        padding: 50px 6%;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-banner img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .watch-banner {
+        padding: 50px 6%;
+    }
+
+    .watch-banner h2 {
+        font-size: 28px;
+    }
+
+    footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* SMALL MOBILE DESIGN */
+
+@media (max-width: 480px) {
+
+    .watch-container,
+    .category-container,
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero-text h1,
+    .about-hero-text h1 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+
+/* FINAL TEXT COLOUR FIX */
+
+a,
+a:visited,
+a:active {
+    color: #F5F5F5;
+}
+
+/* Keep gold accents gold */
+
+.logo span,
+.footer-logo span,
+.small-title,
+.hero-text h1 span,
+.watches h2 span,
+.about-home h2 span,
+.watch-banner h2 span,
+.last-section h2 span,
+.about-hero-text h1 span,
+.about-text h2 span,
+.about-values h2 span,
+.why-noir-text h2 span,
+.about-bottom h2 span,
+.services-hero h1 span,
+.services-section h2 span,
+.care-text h2 span,
+.faq-section h2 span,
+.services-bottom h2 span,
+.contact-hero h1 span,
+.contact-info h2 span,
+.contact-form h2 span,
+.contact-banner-text h2 span,
+.category-container h3,
+.value-box i,
+.service-text i,
+.care-point i,
+.contact-item i,
+.footer-box p i {
+    color: #D4AF37;
+}
+
+/* Keep buttons readable */
+
+.gold-button,
+.gold-button:visited,
+.gold-button:hover,
+.contact-form button {
+    color: #101010;
+}
+
+/* Keep navigation highlight gold */
+
+nav a:hover,
+nav a.active {
+    color: #D4AF37;
+}
+
+/* Keep link hover effects gold */
+
+.watch-card a:hover,
+.service-text a:hover,
+.footer-box > a:hover,
+.contact-social a:hover,
+.social-icons a:hover {
+    color: #D4AF37;
+}
+
